@@ -24,6 +24,14 @@ int main()
         delete rrf;
     }
 
+    rrf = someRandomIntern.makeForm("presidential pardon", "Criminal");
+    if (rrf)
+    {
+        boss.signForm(*rrf);
+        boss.executeForm(*rrf);
+        delete rrf;
+    }
+
     rrf = someRandomIntern.makeForm("unknown form", "Target");
     if (rrf)
     {
