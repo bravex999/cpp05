@@ -39,14 +39,14 @@ AForm* Intern::_makePardon(const std::string& target)
 
 AForm* Intern::makeForm(const std::string& name, const std::string& target)
 {
-	std::string names[] = 
+	static const std::string names[] = 
 	{
 		"shrubbery creation",
 		"robotomy request",
 		"presidential pardon"
 	};
 
-	AForm* (Intern::*methods[])(const std::string&) = 
+	static AForm* (Intern::*methods[])(const std::string&) = 
 	{
 		&Intern::_makeShrubbery,
 		&Intern::_makeRobotomy,
