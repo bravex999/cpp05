@@ -2,7 +2,7 @@
 #define SHRUBBERYCREATIONFORM_HPP
 
 #include "AForm.hpp"
-#include <fstream>
+#include <string>
 
 class ShrubberyCreationForm : public AForm
 {
@@ -17,6 +17,15 @@ public:
     virtual ~ShrubberyCreationForm();
 
     void execute(Bureaucrat const & executor) const;
+
+    class FileOpeningException : public std::exception
+    {
+    public:
+        virtual const char* what() const throw()
+        {
+            return "ShrubberyCreationForm: Error opening file";
+        }
+    };
 };
 
 #endif
