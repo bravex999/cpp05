@@ -29,7 +29,7 @@ public:
 
     void beSigned(const Bureaucrat& bureaucrat);
     
-    // Método virtual puro: hace que la clase sea abstracta
+    
     virtual void execute(Bureaucrat const & executor) const = 0;
 
     class GradeTooHighException : public std::exception
