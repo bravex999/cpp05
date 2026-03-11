@@ -40,7 +40,7 @@ void ShrubberyCreationForm::execute(Bureaucrat const & executor) const
     std::ofstream outfile((_target + "_shrubbery").c_str());
     if (!outfile.is_open())
     {
-        return;
+        throw ShrubberyCreationForm::FileOpeningException();
     }
 
     outfile << "      /\\      " << "\n";
