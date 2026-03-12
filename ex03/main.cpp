@@ -8,7 +8,7 @@ int main()
     Bureaucrat boss("Boss", 1);
     AForm* rrf;
 
-    rrf = someRandomIntern.makeForm("robotomy request", "Bender");
+    rrf = someRandomIntern.makeForm("robotomy request", "Christian");
     if (rrf)
     {
         boss.signForm(*rrf);
