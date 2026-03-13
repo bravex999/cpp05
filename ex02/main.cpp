@@ -22,7 +22,7 @@ int main()
     Bureaucrat intern("Intern", 150);
 
     ShrubberyCreationForm f1("home");
-    RobotomyRequestForm f2("Bender");
+    RobotomyRequestForm f2("Christian");
     PresidentialPardonForm f3("Criminal");
 
     std::cout << "--- Shrubbery Test ---" << "\n";

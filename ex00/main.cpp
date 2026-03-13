@@ -17,7 +17,7 @@ int main()
 {
     try
     {
-        Bureaucrat a("Alice", 1);
+        Bureaucrat a("Christian", 1);
         std::cout << a << std::endl;
         a.decrementGrade();
         std::cout << a << std::endl;
@@ -33,7 +33,7 @@ int main()
 
     try
     {
-        Bureaucrat b("Bob", 151);
+        Bureaucrat b("Douglas", 151);
         std::cout << b << std::endl;
     }
     catch (std::exception& e)
@@ -43,7 +43,7 @@ int main()
 
     try
     {
-        Bureaucrat c("Charlie", 150);
+        Bureaucrat c("Luis", 150);
         std::cout << c << std::endl;
         c.decrementGrade();
         std::cout << c << std::endl;
@@ -55,7 +55,7 @@ int main()
 
     try
     {
-        Bureaucrat d("Dave", 0);
+        Bureaucrat d("Angel", 0);
         std::cout << d << std::endl;
     }
     catch (std::exception& e)

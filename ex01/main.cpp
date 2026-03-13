@@ -36,8 +36,8 @@ int main()
 
     try
     {
-        Bureaucrat boss("Alice", 1);
-        Bureaucrat intern("Bob", 150);
+        Bureaucrat boss("Christian", 1);
+        Bureaucrat intern("Douglas", 150);
         Form taxForm("TaxForm", 50, 50);
 
         std::cout << taxForm << "\n";
