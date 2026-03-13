@@ -34,10 +34,8 @@ public:
     class FileOpeningException : public std::exception
     {
     public:
-        virtual const char* what() const throw()
-        {
-            return "ShrubberyCreationForm: Error opening file";
-        }
+        virtual const char* what() const throw();
+        
     };
 };
 
