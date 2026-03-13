@@ -35,9 +35,6 @@ public:
     {
     public:
         virtual const char* what() const throw()
-        {
-            return "ShrubberyCreationForm: Error opening file";
-        }
     };
 };
 
