@@ -66,3 +66,7 @@ void ShrubberyCreationForm::execute(Bureaucrat const & executor) const
 
     outfile.close();
 }
+const char* ShrubberyCreationForm::FileOpeningException::what() const throw()
+{
+    return "ShrubberyCreationForm: Error opening file";
+}
